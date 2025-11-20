@@ -149,11 +149,10 @@ body {
   right: -10%;
   transform: translateY(-50%);
   z-index: 0;
-  
   width: 1000px;
   height: auto;
   object-fit: cover;
-  opacity: 0.36;
+  opacity: 0.24;
 }
 
 .hero {
@@ -172,21 +171,6 @@ body {
   inset: 0;
   background: radial-gradient(circle at 70% 40%, rgba(0, 179, 179, 0.15) 0%, transparent 70%);
   pointer-events: none;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 500px;
-  height: 500px;
-  background: url('assets/logo.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.12;
-  pointer-events: none;
-  z-index: 0;
 }
 
 .hero-left,
@@ -317,8 +301,7 @@ footer {
   z-index: 2;
 }
 
-/* Responsive */
-@media (max-width: 968px) {
+@media (max-width: 1200px) {
   .hero {
     flex-direction: column;
     padding: 120px 40px 60px;
@@ -351,6 +334,17 @@ footer {
 
   .contact-buttons {
     justify-content: center;
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-img {
+    top: 25%;
+    width: 75%;
+    right: 10%;
   }
 }
 
