@@ -1,0 +1,166 @@
+/* --- Contact Page Specific Styles --- */
+
+.contact-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 183, 255, 0), rgba(0, 183, 255, 0.4), rgba(0, 183, 255, 0));
+    margin: 60px 0;
+}
+
+
+/* --- 1. Contact Methods Grid --- */
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #0c121c; /* Dark background */
+    border-radius: 10px;
+    border: 1px solid rgba(64, 114, 153, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    color: white; /* Ensure text is visible */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #00bfff; /* Highlight border on hover */
+}
+
+.contact-card i {
+    color: #00bfff; /* Accent icon color */
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.contact-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+.cta-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #88d1ff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* --- 2. Contact Form Styling --- */
+.contact-form-section {
+    padding-bottom: 80px;
+}
+
+.contact-form-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-instructions {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #88d1ff;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(64, 114, 153, 0.4);
+    border-radius: 5px;
+    background-color: #0c121c;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 5px rgba(0, 183, 255, 0.5);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    background-color: #00bfff;
+    color: #000;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #0088cc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.submit-button i {
+    margin-right: 10px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 650px) {
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+}

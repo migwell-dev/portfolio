@@ -1,0 +1,121 @@
+/* --- Services Specific Styles --- */
+
+/* Overview Text */
+.services-overview {
+    max-width: 800px;
+    margin: 40px auto 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.services-overview p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    /* 3 columns on desktop, auto-fit ensures responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.service-card {
+    background-color: #0c121c; /* Dark background, same as projects card */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(64, 114, 153, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a222f; /* Slightly lighter dark on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Use a light blue circle for the icon background */
+    background-color: rgba(0, 183, 255, 0.1); 
+    border-radius: 50%;
+}
+
+.service-icon {
+    font-size: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Call to Action Prompt */
+.contact-prompt {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(64, 114, 153, 0.1); /* Light blue tint */
+    border-radius: 12px;
+    margin-bottom: 80px;
+}
+
+.contact-prompt h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-prompt p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #00bfff; /* Bright blue CTA color */
+    color: #000; /* Black text on bright button */
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #0088cc;
+    color: white; /* Change text color for better contrast on hover */
+    transform: translateY(-2px);
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .contact-prompt h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,147 @@
+/* Project Grid */
+.project-grid {
+    /* Two columns, responsive on smaller screens */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 40px;
+    margin-top: 60px; /* Space from header */
+    margin-bottom: 80px;
+}
+
+.modern-card {
+    display: block; /* Make the entire card clickable */
+    text-decoration: none;
+    color: inherit;
+    background-color: #0c121c; /* Very dark background for contrast */
+    border-radius: 12px;
+    overflow: hidden;
+    /* Subtle gradient border effect using box-shadow or actual border */
+    border: 1px solid rgba(64, 114, 153, 0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 183, 255, 0.5); /* Glowing effect */
+}
+
+
+/* Image and Overlay */
+.project-image-placeholder {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.modern-card:hover .project-image-placeholder img {
+    transform: scale(1.05); /* Slight zoom on image on card hover */
+}
+
+/* Hover Overlay for the image */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modern-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.view-project-text {
+    color: #00bfff; /* Bright color for emphasis */
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Project Details */
+.project-details {
+    padding: 20px 25px;
+    color: white;
+}
+
+.title-meta-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-details h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.year-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #88d1ff; /* Accent color for the year */
+}
+
+.project-details p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+
+/* Tech Stack Pills (Updated look) */
+.tech-stack-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-pill {
+    background-color: rgba(64, 114, 153, 0.3);
+    color: #88d1ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on tablets/mobile */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-image-placeholder {
+        height: 200px;
+    }
+
+    .project-details h3 {
+        font-size: 1.4rem;
+    }
+}

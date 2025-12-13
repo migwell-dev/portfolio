@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel Earl Fortuna - Contact</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="menu-container">
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <a href="../index.html" class="menu-logo">
+      <img src="../assets/logo.png" alt="Miguel Logo" />
+    </a>
+
+    <div class="menu">
+      <ul></ul>
+      <ul>
+        <li><a href="about.html">about me</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="contact.html" class="active">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="background-wrapper">
+    <div class="container">
+
+      <section class="contact-header">
+        <div class="skew-box">
+          <h1>get in touch</h1>
+        </div>
+        <p class="intro-text">
+          I am currently open to new opportunities, collaborations, and discussions about technology. Feel free to
+          connect via any of the methods below or send a message directly.
+        </p>
+      </section>
+
+      <section class="contact-methods">
+        <a href="mailto:youremail@example.com" class="contact-card email-card">
+          <i class="fas fa-envelope fa-3x"></i>
+          <h3>Email Address</h3>
+          <p>youremail@example.com</p>
+          <span class="cta-text">Send a Message &rarr;</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/miguel-earl-fortuna-808a91344/" target="_blank"
+          class="contact-card linkedin-card">
+          <i class="fab fa-linkedin fa-3x"></i>
+          <h3>LinkedIn</h3>
+          <p>Miguel Earl Fortuna</p>
+          <span class="cta-text">Connect Now &rarr;</span>
+        </a>
+
+        <a href="tel:+639170000000" class="contact-card phone-card">
+          <i class="fas fa-phone fa-3x"></i>
+          <h3>Phone Number</h3>
+          <p>+63 917 000 0000</p>
+          <span class="cta-text">Call Me &rarr;</span>
+        </a>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="contact-form-section">
+        <h2>Send a Direct Message</h2>
+        <p class="form-instructions">I aim to respond to all inquiries within 24-48 hours.</p>
+
+        <form action="submit-form.php" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry / Job Opportunity">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required
+              placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </section>
+
+      <footer>
+        migwell-dev &copy; 2025 Miguel Earl Fortuna
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -4,59 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miguel Earl Fortuna</title>
+  <title>Miguel Earl Fortuna - Home</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-  <div id="particles-js"></div>
   <nav class="menu-container">
-    <!-- burger menu -->
     <input type="checkbox" aria-label="Toggle menu" />
     <span></span>
     <span></span>
     <span></span>
 
-    <!-- logo -->
     <a href="#" class="menu-logo">
       <img src="assets/logo.png" alt="Miguel Logo" />
     </a>
 
-    <!-- menu items -->
     <div class="menu">
+      <ul></ul>
       <ul>
-      </ul>
-      <ul>
         <li>
-          <a href="#">
-            about me
-          </a>
+          <a href="pages/about.html">about me</a>
         </li>
         <li>
-          <a href="#">
-            projects
-          </a>
+          <a href="pages/projects.html">projects</a>
         </li>
         <li>
-          <a href="">
-            services
-          </a>
+          <a href="pages/services.html">services</a>
         </li>
         <li>
-          <a href="">
-            resume
-          </a>
+          <a href="pages/resume.html">resume</a>
         </li>
         <li>
-          <a href="">
-            contact
-          </a>
+          <a href="pages/contact.html">contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="background">
+  <div class="background-wrapper">
     <img class="background-img" src="assets/logo.png">
     <section class="hero">
       <div class="hero-left">
@@ -65,14 +51,13 @@
         <h3 class="subtitle">Software and Web Developer</h3>
         <p>
           I am a software developer currently based in the Philippines. <br> I specialize in platform-agnostic software
-          development,
-          web development, and AI/ML. I aim to develop, collaborate on, and contribute to meaningful products and
-          software
-          in the technology space.
+          development, web development, and AI/ML. I aim to develop, collaborate on, and contribute to meaningful
+          products and
+          software in the technology space.
         </p>
 
         <div class="contact-buttons">
-          <a href="#">Contact me</a>
+          <a href="pages/contact.html">Contact me</a>
           <a href="https://www.linkedin.com/in/miguel-earl-fortuna-808a91344/" target="_blank"><img
               src="assets/linkedin.png" alt="LinkedIn"></a>
           <a href="https://www.github.com/migwell-dev" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
@@ -80,8 +65,8 @@
 
         <h2>Projects</h2>
         <div class="projects">
-          <div class="project-card"><img src="project1.png" alt="Project 1"></div>
-          <div class="project-card"><img src="project2.png" alt="Project 2"></div>
+          <div class="project-card"><img src="https://via.placeholder.com/150x100?text=Project+1" alt="Project 1"></div>
+          <div class="project-card"><img src="https://via.placeholder.com/150x100?text=Project+2" alt="Project 2"></div>
         </div>
       </div>
 
@@ -89,21 +74,10 @@
         <img src="assets/picture.png" alt="Developer Photo">
       </div>
     </section>
+    <footer>
+      migwell-dev &copy; 2025 Miguel Earl Fortuna
+    </footer>
   </div>
-
-  <footer>
-    migwell-dev © 2025 Miguel Earl Fortuna
-  </footer>
-
-  <script src="scripts/particles.min.js"></script>
-
-  <script>
-    particlesJS.load("particles-js",
-      "scripts/particlesjs-config.json", function () {
-        console.log("config loaded");
-      }
-    );
-  </script>
 
 </body>
 
